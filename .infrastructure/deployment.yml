@@ -28,6 +28,9 @@ spec:
         limits:
           cpu: 500m
           memory: 512Mi
+       env:
+       - name: PYTHONUNBUFFERED
+         value: "1"
        ports:
        - containerPort: 8080
        livenessProbe:
